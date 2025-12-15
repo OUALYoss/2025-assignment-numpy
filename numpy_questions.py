@@ -78,7 +78,7 @@ def wallis_product(n_terms):
         # Wallis product term
         pi *= (4 * k**2) / (4 * k**2 - 1)
     
-    # Multiply by 2 to get the approximation of pi
+    # by 2 
     pi *= 2
     
     return pi
