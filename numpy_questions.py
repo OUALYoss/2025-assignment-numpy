@@ -15,7 +15,7 @@ We also ask to respect the pep8 convention: https://pep8.org.
 This will be enforced with `flake8`. You can check that there is no flake8
 errors by calling `flake8` at the root of the repo.
 """
-from logging import raiseExceptions
+# from logging import raiseExceptions
 import numpy as np
 
 
@@ -38,9 +38,6 @@ def max_index(X):
         If the input is not a numpy array or
         if the shape is not 2D.
     """
-    # i = 0 
-    # j = 1 # it's was 0
-    
     # Checking
     if not isinstance(X, np.ndarray):
         raise ValueError("not a numpy array")
@@ -77,6 +74,5 @@ def wallis_product(n_terms):
         # Wallis product term
         pi *= (4 * k**2) / (4 * k**2 - 1)
     
-
     return pi
   
